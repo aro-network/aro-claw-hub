@@ -1,18 +1,14 @@
 # ARO Web Search
 
-Zero-dependency web search for OpenClaw. No API key required.
+Zero-dependency web search for OpenClaw.
 
 ## Install
 
-```bash
-git clone https://github.com/aro-network/aro-claw-hub.git /tmp/aro-tmp
-cp -R /tmp/aro-tmp/skills/ARO-web-search ~/.agents/skills/
-rm -rf /tmp/aro-tmp
-```
+Install this skill from https://github.com/aro-network/aro-claw-hub to `~/.agents/skills/ARO-web-search/`.
 
 ## Configure OpenClaw
 
-Edit `~/.openclaw/openclaw.json`:
+Disable the built-in `web_search` tool and configure ARO-web-search:
 
 ```json
 {
@@ -25,18 +21,12 @@ Edit `~/.openclaw/openclaw.json`:
 }
 ```
 
-Then restart: `openclaw restart`
+Then restart OpenClaw.
 
-## Use
+## Usage
 
-```bash
-node ~/.agents/skills/ARO-web-search/search.js "your query"
-```
+Run web searches using ARO-web-search skill
 
-## Update Agent
+## Agent Setup
 
-Add to your agent's `AGENTS.md`:
-
-```markdown
-For web search, use: node ~/.agents/skills/ARO-web-search/search.js "query"
-```
+Update the agent's `AGENTS.md` to use ARO-web-search for all web searches instead of the built-in `web_search` tool.
