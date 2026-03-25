@@ -13,8 +13,8 @@ Web search skill using ARO's self-hosted SearX instance. **Zero dependencies** -
 
 ## Purpose
 
-- Web search without API keys
-- Use ARO's SearX + IP rotation infrastructure
+- Web search using ARO's SearX infrastructure
+- Zero external dependencies
 - **No Python required**
 - **No pip install required**
 
